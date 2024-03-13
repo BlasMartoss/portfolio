@@ -1,0 +1,650 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+
+#burger_button{
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    gap: .65rem;
+    
+}
+#burger_button div{
+    background: white;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+#menu_section{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+#menu_section img{
+    width: 100px;
+    height: 100px;
+}
+#main_menu{
+  
+    width: 55%;
+    justify-content: center;
+    display: flex;
+}
+#main_menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+#about{
+    background-color:#fafafa;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#border_div{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    width: 75%;
+    height: 100%;
+
+}
+#about_text{
+ 
+    width: 50%;
+    padding-left: 5%;
+
+}
+
+#about_text h1{
+  font-size: 60px;
+  color: #333333;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#second_title{
+    color: #9a9a9a;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#description{
+    font-size: 18px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+#about_image{
+
+    margin-right: 2%;
+    width: 50%;
+    display: flex;
+
+}
+#about_image img{
+    width: 600px;
+    height: 600px;
+}
+
+/*Skills Style*/
+#skills{
+ 
+    padding: 5%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+   
+}
+#skill_image_div{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#skill_image_div img{
+    width: 400px;
+    height: 400px;
+}
+
+#text_skill{
+    color: #9a9a9a;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#skills_info_div{
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+#skills_info_div h2{
+    font-size: 35px;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skills_div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.skill_div_group{
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.skill_div_group p{
+
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    color: #666666;
+    transition: transform 0.2s;
+    border-radius: 5px;
+}
+.skill_div_group p:hover{
+    transform: scale(1.2);
+}
+
+#title_div{
+    text-align: center;
+}
+
+/*Projects*/
+#projects{
+    padding-top: 2%;
+    background-color: #fafafa;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#projects_title{
+    font-size: 35px;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project{
+ 
+    height: 100%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.project_image{
+    justify-content: center;
+    display: flex;
+
+    width: 60%;
+    height: 100%;
+    align-items: center;
+}
+.project_image img{
+    height: 400px;
+    width: 600px;
+}
+.project_information{
+
+    margin-left: 2%;
+    padding-right: 2%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.project_information h2{
+    font-size: 35px;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}
+.project_information p{
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project_button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 150px;
+    font-size: 20px;
+    padding: 2%;
+    align-items: center;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.project_button:hover{
+    transform: translateY(-5px);
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+#footer_div{
+    flex-direction: row;
+    display: flex;
+    
+}
+#border_footer{
+    border-bottom: 1px solid white;
+    width: 70%;
+}
+#border_footer_1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+#footer_image{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#contact_information{
+color: white;
+width: 50%;
+padding-top: 3%;
+padding-left: 5%;
+padding-right: 5%;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+#copyright_div{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#contact_div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ 
+}
+
+.contact{
+    transition: transform 0.3s ease;
+}
+.contact:hover{
+    transform: translateY(-5px);
+}
+ 
+
+#burger_menu{
+  background-color: black;
+  padding: 5%;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+#burger{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+#burger a{
+    padding-bottom: 4px;
+    margin-bottom: 2%;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+#burger a:hover{
+    border-bottom: 1px solid #9a9a9a;
+    color: #9a9a9a;
+}
+
+/*Project*/
+.project_section{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.project_section img{
+    width: 640px;
+    height: 420px;
+}
+.project_section h2{
+    font-size: 50px;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.div_border_project{
+    width: 70%;
+    border-bottom: 2px solid black;
+}
+
+.project_overview{
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.project_overview h3{
+    font-size: 28px;
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tools_used{
+   
+    width: 30%;
+}
+.project_text{
+
+    width: 55%;
+}
+.project_text p{
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.project_images_1{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.project_images_1 img{
+    height: 400px;
+    width: 620px;
+    margin: 1%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/*Responsive Project.html*/
+
+@media screen and (max-width: 1040px) and (min-width: 450px) {
+    .project_section img{
+        width: 440px;
+        height: 320px;
+       
+    }
+    .project_images_1 img{
+        height: 300px;
+        width: 420px;
+        margin: 2%;
+    }
+    .project_text{
+        width: 70%;
+    }
+    .project_text p{
+        font-size: 15px;
+    }
+    .project_overview h3{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 449px) {
+    .project_section img{
+        width: 250px;
+        height: 180px;
+    }
+    .project_images_1 img{
+        height: 200px;
+        width: 300px;
+    }
+    .project_section{
+      padding: 2%;
+    }
+    .project_text{
+        width: 90%;
+    }
+    .project_text p{
+        font-size: 13px;
+    }
+    .project_overview h3{
+        font-size: 30px;
+    }
+}
+
+/*Responsive Design MENU BURGER*/
+
+@media screen and (min-width: 820px) {
+    #burger_menu{
+        display: none;
+        background-color: transparent;
+    }
+    #burger{
+        display: none;
+    }
+}
+
+
+
+/*Responsive Design FOOTER*/
+
+@media (max-width: 500px) {
+    #footer_div{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+    #contact_information{
+        width: 70%;
+    }
+}
+/*Responsive Design PROJECT*/
+@media (max-width: 1230px) and (min-width: 901px) {
+    .project_image img{
+        height: 330px;
+        width: 450px;
+    }
+}
+@media (max-width: 900px) {
+    .project_image img{
+        height: 330px;
+        width: 450px;
+    }
+    .project_image{
+        width: 70%;
+    }
+    .project{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project_information{
+        width: 90%;
+        align-items: center;
+    }
+}
+@media (max-width: 500px) {
+    .project_image img{
+        height: 230px;
+        width: 350px;
+    }
+    .project_information{
+        width: 100%;
+    }
+}
+/*Responsive Design SKILLS*/
+@media (max-width: 900px) {
+
+    #skills{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #skills img{
+        width: 280px;
+        height: 280px;
+    }
+    #skills_info_div{
+        width: 100%;
+        
+    }
+    .skill_div_group p{
+        font-size: 15px;
+    }
+}
+/*Responsive Design "ABOUT"*/
+@media screen and (min-width: 820px) and (max-width: 1170px) {
+    #about_image img{
+        width: 400px;
+        height: 400px;
+    }
+    #about_text h1{
+        font-size: 40px;
+    }
+    
+    #second_title{
+        font-size: 18px;
+    }
+
+    #description{
+        font-size: 15px;
+    }
+ 
+}
+
+@media screen and (min-width: 501px) and (max-width: 820px) {
+    #border_div{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #about_text{
+        margin: 0px;
+        width: 80%;
+    }
+    #about_image{
+        padding: 0px;
+       
+        width: 100%;
+        justify-content: center;
+        margin: 0px;
+    }
+    #about_image img{
+     
+        width: 500px;
+        height: 500px;
+    }
+    #about_text h1{
+        font-size: 45px;
+    }
+    #second_title{
+        font-size: 25px;
+    }
+    #main_menu{
+        display: none;
+    }
+    #description{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 820px) {
+    #main_menu{
+        display: none;
+    }
+    #burger_button{
+        display: flex;
+        margin-left: 50%;
+        margin-top: 2%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #about{
+        padding: 0px;
+        margin: 0px;
+    }
+    #border_div{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    #about_text{
+        padding: 0;
+        width: 100%;
+
+    }
+    #about_image{
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    #about_image img{
+        width: 100%;
+        height: 350px;
+    }
+    #border_div{
+        width: 90%;
+    }
+    #about_text h1{
+        font-size: 35px;
+    }
+    #second_title{
+        font-size: 18px;
+    }
+ 
+    #description{
+        font-size: 15px;
+    }
+}
