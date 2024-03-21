@@ -402,8 +402,8 @@ text-align: center;
     align-items: center;
 }
 .project_images_1 img{
-    height: 400px;
-    width: 620px;
+    height: 450px;
+    width: 850px;
     margin: 1%;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -411,15 +411,15 @@ text-align: center;
 
 /*Responsive Project.html*/
 
-@media screen and (max-width: 1040px) and (min-width: 450px) {
+@media screen and (max-width: 1040px) and (min-width: 670px) {
     .project_section img{
         width: 440px;
         height: 320px;
        
     }
     .project_images_1 img{
-        height: 300px;
-        width: 420px;
+        height: 400px;
+        width: 650px;
         margin: 2%;
     }
     .project_text{
@@ -431,6 +431,14 @@ text-align: center;
     .project_overview h3{
         font-size: 40px;
     }
+}
+
+@media screen and (max-width: 669px) and (min-width: 450px) {
+    .project_images_1 img{
+        height: 250px;
+        width: 430px;
+        margin: 2%;
+    } 
 }
 @media screen and (max-width: 449px) {
     .project_section img{
