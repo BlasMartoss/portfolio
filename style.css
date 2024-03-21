@@ -111,7 +111,7 @@ body{
 #skills{
  
     padding: 5%;
-    height: 60vh;
+    height: 60%;
     display: flex;
     flex-direction: row;
    
@@ -231,7 +231,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .project_information p{
-    font-size: 18px;
+    font-size: 16px;
     color: #333333;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
